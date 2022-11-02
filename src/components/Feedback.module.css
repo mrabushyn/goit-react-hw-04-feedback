@@ -1,0 +1,35 @@
+body {
+  background-color: rgba(1, 131, 44, 0.226);
+}
+
+.mainContainer {
+  height: 100vh;
+display: flex;
+margin-left: auto;
+margin-right: auto;
+flex-direction: column;
+align-items: center;
+  font-size: 22px;
+  color: #010101;
+}
+
+.item {
+  list-style: none;
+}
+
+.list {
+  font-size: 28px;
+}
+
+.buttons {
+margin: 15px;
+font-size: 28px;
+}
+
+.title{
+  font-size: 28px ;
+}
+
+.notification {
+  color:crimson ;
+}
