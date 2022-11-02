@@ -8,25 +8,13 @@ import { Section } from './Section';
 import { Notification } from './Notification';
 
 export class Feedback extends Component {
-  static props = {
-    step: 1,
-    initialValue: 0,
-    initialValuePercentage: 100,
-  };
-
-  constructor(props) {
-    super(props);
-    this.handleIncrementForGood = this.handleIncrementForGood.bind(this);
-    this.handleIncrementForNeutral = this.handleIncrementForNeutral.bind(this);
-    this.handleIncrementForBad = this.handleIncrementForBad.bind(this);
-    this.state = {
+    state = {
       valueForGood: this.props.initialValue,
       valueForNeutral: this.props.initialValue,
       valueForBad: this.props.initialValue,
       valueForTotal: this.props.initialValue,
       valueForPercentage: this.props.initialValuePercentage,
     };
-  }
 
   handleIncrementForGood() {
     this.setState((state, props) => ({
@@ -69,6 +57,12 @@ export class Feedback extends Component {
   }
 
   render() {
+
+    this.handleIncrementForGood = this.handleIncrementForGood.bind(this);
+    this.handleIncrementForNeutral = this.handleIncrementForNeutral.bind(this);
+    this.handleIncrementForBad = this.handleIncrementForBad.bind(this);
+
+
     return (
       <div className={css.mainContainer}>
         <Section title="Please leave feedback">
