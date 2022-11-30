@@ -5,6 +5,8 @@ import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <App 
+    // initialValue = {0} step = {1} initialValuePercentage ={ 100}
+    />
   </React.StrictMode>
 );
